@@ -42,6 +42,10 @@ labels = np.array(labels)
 
 # Normalize the image data
 images = images / 255.0
+# Checking an image
+sample=images[120]
+plt.imshow(sample)
+plt.title(label[120])
 
 labels = to_categorical(labels)
 
